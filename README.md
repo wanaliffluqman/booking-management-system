@@ -60,13 +60,13 @@ Layered Design
 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/booking_management_system.git
+git clone https://github.com/your-username/booking-management-system.git
 ```
 
 2. Navigate into the project
 
 ```bash
-cd booking_management_system
+cd booking-management-system
 ```
 
 3. Install dependencies
