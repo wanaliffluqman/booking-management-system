@@ -58,16 +58,25 @@ Layered Design
 ## ▶️ Getting Started
 
 1. Clone the repository
-   git clone https://github.com/your-username/booking_management_system.git
 
+```bash
+   git clone https://github.com/your-username/booking_management_system.git
+```
+
+```bash
 2. Navigate into the project
    cd booking_management_system
+```
 
+```bash
 3. Install dependencies
    flutter pub get
+```
 
+```bash
 4. Run the application
    flutter run
+```
 
 ## 🧪 Demo Guide
 
