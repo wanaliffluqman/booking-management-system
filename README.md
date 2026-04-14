@@ -78,7 +78,7 @@ flutter pub get
 4. Run the application
 
 ```bash
-   flutter run
+flutter run
 ```
 
 ## 🧪 Demo Guide
