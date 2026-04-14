@@ -8,7 +8,7 @@ AeroSparkle BMS is a Flutter-based mobile application that simulates a basic boo
 
 ## ✨ Features
 
-✅ Core Requirements
+### ✅ Core Requirements
 
 - Display booking list with:
   - Customer Name
@@ -38,6 +38,7 @@ lib/
 ├── screens/    # Main UI screens
 ├── widgets/    # Reusable UI components
 └── main.dart   # App entry point
+```
 
 Layered Design
 
@@ -87,4 +88,3 @@ Layered Design
 ## 👤 Author
 
 Wan Aliff Luqman
-```
