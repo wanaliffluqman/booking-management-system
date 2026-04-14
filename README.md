@@ -31,12 +31,13 @@ AeroSparkle BMS is a Flutter-based mobile application that simulates a basic boo
 
 The application follows a simple and maintainable structure:
 
+```bash
 lib/
-├── models/ # Data models & business logic
-├── services/ # Mock API & data handling
-├── screens/ # Main UI screens
-├── widgets/ # Reusable UI components
-└── main.dart # App entry point
+├── models/     # Data models & business logic
+├── services/   # Mock API & data handling
+├── screens/    # Main UI screens
+├── widgets/    # Reusable UI components
+└── main.dart   # App entry point
 
 Layered Design
 
@@ -86,3 +87,4 @@ Layered Design
 ## 👤 Author
 
 Wan Aliff Luqman
+```
