@@ -1,8 +1,5 @@
 /// Booking status (`pending` | `completed`).
-enum BookingStatus {
-  pending,
-  completed,
-}
+enum BookingStatus { pending, completed }
 
 /// A single booking with schedule, location, and pricing via [finalAmount].
 class Booking {
@@ -28,11 +25,11 @@ class Booking {
   /// When the booking takes place (date + time).
   final DateTime scheduledAt;
 
-  /// Local calendar date for planner / month views (no time component).
+  /// Local calendar date for planner / month views .
   DateTime get dateOnly =>
       DateTime(scheduledAt.year, scheduledAt.month, scheduledAt.day);
 
-  /// Short venue label (e.g. branch or building name).
+  /// Short venue label for display in lists and calendar. E.g. "Bangsar" or "JW Marriot, Bukit Bintang".
   final String locationName;
 
   /// Full address for display and opening in maps.
@@ -40,10 +37,10 @@ class Booking {
 
   /// Opens Google Maps search for [address].
   Uri get mapsSearchUri => Uri.parse(
-        'https://www.google.com/maps/search/?api=1&query=${Uri.encodeComponent(address)}',
-      );
+    'https://www.google.com/maps/search/?api=1&query=${Uri.encodeComponent(address)}',
+  );
 
-  /// Discount applies when amount is **strictly greater than** RM 200.
+  /// Discount applies when amount is **greater than** RM 200.
   static const double discountThreshold = 200.0;
   static const double discountRate = 0.10;
 
@@ -53,8 +50,7 @@ class Booking {
   double get finalAmount =>
       qualifiesForDiscount ? amount * (1 - discountRate) : amount;
 
-  double get discountAmount =>
-      qualifiesForDiscount ? amount * discountRate : 0;
+  double get discountAmount => qualifiesForDiscount ? amount * discountRate : 0;
 
   Booking copyWith({
     String? id,

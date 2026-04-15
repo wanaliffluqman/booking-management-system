@@ -2,12 +2,6 @@ import 'dart:math';
 
 import '../models/booking.dart';
 
-/// Mock API with artificial latency. Use [failNextFetch] or optional random
-/// failure for error UI demos.
-///
-/// Seed data mirrors real-world laundry flows similar to
-/// [AeroSparkle](https://apps.apple.com/my/app/aerosparkle/id6747414923):
-/// doorstep pickup, wash & fold, delivery windows, and billing-style totals.
 class BookingService {
   BookingService() {
     _bookings.addAll(_seedBookings);
